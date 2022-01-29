@@ -8,8 +8,8 @@ import pandas as pd
 import numpy as np
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 
-nltk.download('vader_lexicon')
-nltk.download('stopwords')
+# nltk.download('vader_lexicon')
+# nltk.download('stopwords')
 
 stop_words = set(stopwords.words('english'))
 extractor = URLExtract()
