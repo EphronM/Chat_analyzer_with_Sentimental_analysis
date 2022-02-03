@@ -22,7 +22,7 @@ def set_background(png_file):
     ''' % bin_str
     st.markdown(page_bg_img, unsafe_allow_html=True)
 
-set_background('chat_analyzer_bg.jpg')
+set_background('artifacts/chat_analyzer_bg.jpg')
 
 st.sidebar.title('Whatsapp Chat Analyzer')
 uploaded_file = st.sidebar.file_uploader('Choose a file')
@@ -44,7 +44,7 @@ if uploaded_file is not None:
     num_messages, words, media, links = analyzer.fetch_stats(selected_user, df)
 
     if st.sidebar.button('Show Analysis'):
-        col1, col2, col3, col4 = st.columns(4)
+        col1, col2, col3, col4 = st.beta_columns(4)
         with col1:
             st.header("Total Messages")
             st.title(num_messages)
@@ -66,7 +66,7 @@ if uploaded_file is not None:
 
             fig, ax = plt.subplots()
 
-            col1, col2 = st.columns(2)
+            col1, col2 = st.beta_columns(2)
             with col1:
                 sns.barplot(x=users, y=values)
                 ax.set_xticklabels(ax.get_xticklabels(), rotation=90, horizontalalignment='right')
@@ -85,7 +85,7 @@ if uploaded_file is not None:
         #most common words
         st.header('Most Common Words')
         most_common_df = analyzer.most_common_words(selected_user, df)
-        col1, col2 = st.columns(2)
+        col1, col2 = st.beta_columns(2)
         fig, ax = plt.subplots()
 
         with col1:
@@ -99,7 +99,7 @@ if uploaded_file is not None:
         st.header("Most used Emojis")
         emoji_df = analyzer.emoji_counter(selected_user, df)
 
-        col1, col2 = st.columns(2)
+        col1, col2 = st.beta_columns(2)
         with col1:
             fig, ax = plt.subplots()
             colors = sns.color_palette('pastel')[0:10]
@@ -116,7 +116,7 @@ if uploaded_file is not None:
 
         st.header('Daily and Monthy Timelines')
 
-        col1, col2 = st.columns(2)
+        col1, col2 = st.beta_columns(2)
 
         # monthy timeline data
         with col1:
@@ -136,7 +136,7 @@ if uploaded_file is not None:
         busy_day, busy_month = analyzer.busy_month_day(selected_user, df)
 
         st.header('Busy days and months')
-        col1, col2 = st.columns(2)
+        col1, col2 = st.beta_columns(2)
 
         with col1:
             fig, ax = plt.subplots()
@@ -164,7 +164,7 @@ if uploaded_file is not None:
         score, t_pos, t_neg, t_neu = analyzer.sentimental_analysis(selected_user, df)
         st.header(f'The overall chat is of {score} sentimental')
 
-        col1, col2 = st.columns(2)
+        col1, col2 = st.beta_columns(2)
         with col1:
             fig, ax = plt.subplots()
             data = [t_pos, t_neg, t_neu]
