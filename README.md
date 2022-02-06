@@ -19,7 +19,7 @@ Its a demo statistics of our peorsal groups.
 Clone the repository
 
 ```bash
-git clone https://github.com/EphronM/chat_analyzer_with_sentimental_analysis.git
+git clone https://github.com/EphronM/Chat_analyzer_with_Sentimental_analysis.git
 ```
 * Note: WordCloud has a issue of not getting installed on newer python versions. Its preferred to set runtime as Python 3.7 
 
@@ -141,7 +141,7 @@ The Analyzer gives us the polarity score for
 * Negative
 * Neutral
 
-![sentimal_all](https://user-images.githubusercontent.com/94764266/152691269-1e0eec69-81cb-4480-ade0-ad1114bfea50.png)
+![sentimal_all](https://user-images.githubusercontent.com/94764266/152692925-aa032545-affd-462d-b42b-c28b440522db.png)
 
  And the values are assigned as each separate feature. By calulating the total sum of all the 3 new features, and 
  comparing the values to find the max to give the corresponding Sentiment as overall sentiments.
@@ -149,7 +149,7 @@ The Analyzer gives us the polarity score for
 By ploting all three total sums gives the overall sentiments of the chat.
 To compare the diffrence between positive and negative sentiments, separate pie chat is plotted for total positive & negative.
 
-![senti](https://user-images.githubusercontent.com/94764266/152691248-17611f8b-97f3-4e81-bb16-9106cc482660.png)
+![senti](https://user-images.githubusercontent.com/94764266/152692837-c4b4d792-795e-4859-ae1f-26d9af846e08.png)
 
 
 
