@@ -19,7 +19,7 @@ Its a demo statistics of our peorsal groups.
 Clone the repository
 
 ```bash
-https://github.com/EphronM/chat_analyzer_with_sentimental_analysis.git
+git clone https://github.com/EphronM/chat_analyzer_with_sentimental_analysis.git
 ```
 * Note: WordCloud has a issue of not getting installed on newer python versions. Its preferred to set runtime as Python 3.7 
 
