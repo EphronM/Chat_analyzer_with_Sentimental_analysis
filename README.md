@@ -14,6 +14,38 @@ Its a demo statistics of our peorsal groups.
 
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/94764266/152677051-429643d5-662a-4363-8a3b-cae289808a35.gif)
 
+## Run this webApp localy
+
+Clone the repository
+
+```bash
+git clone https://github.com/EphronM/chat_analyzer.git
+```
+* Note: WordCloud has a issue of not getting installed on newer python versions. Its preferred to set runtime as Python 3.7 
+
+#### Create a conda environment after opening the repository
+
+```bash
+conda create -n chatenv python=3.7 -y
+```
+
+```bash
+conda activate chatenv
+```
+
+
+#### Installing the required dependencies
+```bash
+pip install -r requirements.txt
+```
+
+
+#### All set to run the webApp
+```bash
+streamlit run app.py
+```
+
+
 
 ## where do you get these datas from?
 
@@ -120,26 +152,9 @@ To compare the diffrence between positive and negative sentiments, separate pie 
 ![senti](https://user-images.githubusercontent.com/94764266/152691248-17611f8b-97f3-4e81-bb16-9106cc482660.png)
 
 
-https://chat-analyser-w.herokuapp.com/
 
+```bash
+Author: EphronM
+Email: ephronmartin2016@gmail.com
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-mkdir -p ~/.streamlit
-
-echo "[server]
-headless = true
-port = $PORT
-enableCORS = false
-" > ~/.streamlit/config.toml
+```
