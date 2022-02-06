@@ -1,0 +1,23 @@
+.highlight {
+    border-radius: 0.4rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+
+  }
+  .bold {
+    padding-left: 1rem;
+    font-weight: 700;
+  }
+  .grey {
+    background-color: rgba(230, 230, 230, 0.7);
+    color: rgba(2, 2, 2, 0.753);
+  }
+  .blue {
+    background-color: rgba(213, 243, 253, 0.3);
+    color: rgba(2, 2, 2,0.7);
+  }
+  .yellow {
+    background-color: rgba(243, 206, 19,0.7);
+    color: rgba(2, 2, 2, 0.781);
+  }
+
